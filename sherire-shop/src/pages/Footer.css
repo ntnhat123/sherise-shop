@@ -1,0 +1,24 @@
+
+
+.footer{
+    bottom: 0;
+    display: flex;
+    margin: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+.footer span{
+    
+    font-weight: 600;
+    color: #f12424;
+    
+}
+
+.right-footer{
+    text-align: right;
+    
+    
+}

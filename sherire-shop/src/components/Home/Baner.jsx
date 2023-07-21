@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faBagShopping,faPersonDress,faHeartCircleCheck} from '@fortawesome/free-solid-svg-icons';
 import { useState } from "react";
 import { Col, Row,Container } from "react-bootstrap";
 import './banner.css'
@@ -67,7 +69,27 @@ const Baner = () => {
 
         }
     ]
+    const mentor = [
+        {
+            id: 1,
+            name: 'Sayan Chandra',
+            img:'https://sherise.vercel.app/static/media/mentor3.91b77fad3c01016e08dc.png',
+            description:'Atom is an AI assistant build with help of openai api which provides you 2 different services. This ai bot is super powerful and can present you with perfect results within a thanos snap.'
+        },
+        {
+            id: 2,
+            name: 'Sayan Chandra',
+            img:'https://sherise.vercel.app/static/media/mentor5.d3d29668457db3c97d8c.png',
+            description:'Atom is an AI assistant build with help of openai api which provides you 2 different services. This ai bot is super powerful and can present you with perfect results within a thanos snap.'
+        }
+        ,{
+            id: 3,
+            name: 'Sayan Chandra',
+            img:'https://sherise.vercel.app/static/media/mentor6.3a30a9072e17fcfe90e6.png',
+            description:'Atom is an AI assistant build with help of openai api which provides you 2 different services. This ai bot is super powerful and can present you with perfect results within a thanos snap.'
 
+        }
+    ]
     return (
         <div className="landingPage">
             <section>
@@ -139,7 +161,7 @@ const Baner = () => {
                                 {
                                     service.map((item) => {
                                         return (
-                                            <Col ms={3} className="service-card">
+                                            <Col ms={2} className="service-card">
                                                 <img src={item.img} alt={item.title} />
                                                 <h3>{item.title}</h3>
                                                 <p>{item.description}</p>
@@ -157,7 +179,126 @@ const Baner = () => {
                             
                         </Row>
                     </Row>
+      {/* ================================  Why SheRise  ================================= */}
+                    <Row>
+                        <Col ms={6} md={6} className="left">
+                            <img className="" src="https://ik.imagekit.io/sayancr777/tr:w-400/SheRise/whysherise.svg?updatedAt=1689503441644"
+                            alt=""
+                            />
+                        </Col>
+                        <Col ms={6} md={6}>
+                            <div className="right">
+                                <div className="heading">
+                                    <p>Reasons for choosing us</p>
+                                    <p>Why SheRise ?</p>
+                                </div>
+                                <div className="all-reasons">
+                                <div className="reason1 reason-common">
+                                    <div className="heading">
+                                    <p>
+                                        {" "}
+                                        <FontAwesomeIcon icon={faBagShopping} />
+                                        <span>  Passwordless Authentication</span>{" "}
+                                    </p>
+                                    </div>
+                                    <div className="desc">
+                                    <p>
+                                        Passwordless authentication is an authentication method in
+                                        which a user can log in to any particular product or system
+                                        without entering (and having to remember) a password or any
+                                        other knowledge-based secret. SheRise provides you with this
+                                        feature which will help the users to login to their profile
+                                        seamlessly by eliminating the forget password process from
+                                        the system.{" "}
+                                    </p>
+                                    </div>
+                                </div>
+                                <div className="reason2 reason-common">
+                                    <div className="heading">
+                                    <p>
+                                        {" "}
+                                        <FontAwesomeIcon icon={faPersonDress} />
+                                        <span> Female Oriented Jobs</span>{" "}
+                                    </p>
+                                    </div>
+                                    <div className="desc">
+                                    <p>
+                                        We are the first one to come up with the onestop job portal
+                                        only for the females. Here all the jobs which are listed are
+                                        at first verified by our very own recruiters to eliminate
+                                        false listings and we are providing the job listings under 5
+                                        main criteria i.e, Conferences, Hackathons, Hirings,
+                                        Internships and Workshops.{" "}
+                                    </p>
+                                    </div>
+                                </div>
+                                <div className="reason2 reason-common">
+                                    <div className="heading">
+                                    <p>
+                                        {" "}
+                                        <FontAwesomeIcon icon={faHeartCircleCheck} />
+                                        <span> Supporting Underprivileged</span>{" "}
+                                    </p>
+                                    </div>
+                                    <div className="desc">
+                                    <p>
+                                        Since we are non-profit organization, we are raising funds
+                                        to directly help those female childrens who are not able to
+                                        pursue their career in tech due to financial or any other
+                                        reasons.{" "}
+                                    </p>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </Col>
 
+                    </Row>
+
+                    {/* ================================  What our Mentor says ?  ================================= */}
+                    <Row>
+                            <h2>What our Mentor says ?</h2>
+                        {/* <Col ms={4} md={4}>
+                            
+                                <div className="mentor-img">
+                                    <img src="https://sherise.vercel.app/static/media/mentor3.91b77fad3c01016e08dc.png" alt="mentor" />
+                                </div>
+                                
+                        </Col>
+                        <Col ms={4} md={4}>
+                            <div className="mentor-img">
+                                    <img src="https://sherise.vercel.app/static/media/mentor5.d3d29668457db3c97d8c.png" alt="mentor" />
+                            </div>
+                        </Col>
+                        <Col ms={4} md={4}>
+                                
+                                <div className="mentor-img">
+                                    <img src="https://sherise.vercel.app/static/media/mentor6.3a30a9072e17fcfe90e6.png" alt="mentor" />
+                                </div>
+                        </Col> */}
+
+
+                        
+                            {
+                                mentor.map((item) => {
+                                    return (
+                                            <Col ms={4} md={4}>
+                                                <div className="mentor-img">
+                                                    <img src={item.img} alt={item.name} />
+                                                    <p>{item.description}</p>
+                                                    
+                                                    <p><i>{item.name}</i></p>
+                                                    
+                                                </div>
+                                            </Col>
+                                        )
+                                    }
+                                    )
+                                }
+                                
+                       
+
+                    </Row>
                 </Container>
 
             </section>

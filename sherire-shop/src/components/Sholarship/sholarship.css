@@ -1,0 +1,185 @@
+
+.main{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    z-index: 5;
+    position: relative;
+    border-radius: 1rem;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    
+ 
+    padding-top: 2rem;
+}
+h1{
+    color: #ff105f;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.sholarship-left{
+    display: block;
+    text-align: left;
+    width: 100%;
+    
+   
+}
+.heading p:nth-child(1){
+    font-weight: 800;
+  position: relative;
+  background: linear-gradient(to right, #ff105f, #ffad06);
+  z-index: 5;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;  font-size: 3rem;
+  
+}
+.heading p:nth-child(2){
+    text-align: left;
+    font-size: 1rem;
+    margin-top: -1rem;
+    background: black;
+    z-index: 5;
+    font-family: 'Times New Roman', Times, serif;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.support-overlay{
+    position: absolute;
+    font-size: 5rem;
+    font-weight: 800;
+
+    transform: translateY(-12rem);
+    -webkit-text-fill-color: #ff81ad2d;
+    color: #ff81ad2d;
+    image-rendering: 4;
+}
+.sholarship-left button{
+    background-color: #ff1466c1;
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+.icon{
+    background-color: black;
+    border-radius: 50%;
+    padding: 0.5rem;
+}
+.contact-right{
+    
+    
+    width: 100%;
+}
+.contact-right img{
+    width: 100%;
+
+    
+    object-fit: cover;
+}
+.form-scholarship{
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 2rem;
+    
+    width: 50%;
+}
+.form-scholarship input{
+    padding: 1rem;
+    border: 1px solid #ff00002d;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    outline: none;
+    display: block;
+    width: 100%;
+}
+.form-scholarship textarea{
+    padding: 1rem;
+    border: 1px solid #ff00002d;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    outline: none;
+    display: block;
+    width: 100%;
+}
+.form-scholarship button{
+    
+    
+    width: 20%;
+
+    padding: 1rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: #ff1466c1;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 1rem;
+
+}
+
+
+    /* .form-contact input::placeholder , .form-contact textarea::placeholder{
+        color: #ff00002d;
+    } */
+
+/* @media screen and (max-width:767px){
+    .contact-main{
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 0;
+    }
+    .contact-left{
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 2rem;
+        margin-bottom: 0;
+        padding-top: 0;
+    }
+   
+    .contact-right img{
+        display: none;
+    }
+    .form-contact button{
+        
+        padding: 1rem;
+        width: 100%;
+        margin-right: 2rem;
+    }
+    .form-contact input{
+        width: 100%;
+        margin-right: 2rem;
+    }
+    .form-contact textarea{
+        margin-right: 2rem;
+
+        width: 100%;
+    }
+
+    .heading{
+        font-size: 2rem;
+        margin-top: -1rem;
+    }
+    .support-overlay{
+        font-size: 3rem;
+    }
+    .slanting-contact-div{
+        height: 20rem;
+        
+    }
+    
+} */
